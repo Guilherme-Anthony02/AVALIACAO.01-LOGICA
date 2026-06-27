@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avaliação-01</title>
-
-    <script src="js/scripts.js" defer></script>
+    <title>Coletor de Residuos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/scripts.js"> defer</script>
 </head>
-
 <body>
-    <div id="geral">
-        <h1>Coleta de Resíduos</h1>
 
-        <form id="formulario">
-            <label for="descricao">Informe a descrição da empresa</label>
-            <input type="text" name="descricao" id="descricao">
+    <h1>Coletor de Residuos</h1>
 
-            <label for="quantidade">Informe a quantidade recolhida</label>
-            <input type="text" name="quantidade" id="quantidade">
+    <p>Nome da Empresa:</p>
+    <input type="text" id="empresa">
 
-            <button type="submit"> Calcular </button>
-            <button type="reset"> Limpar </button>
+    <p>Quantidade Recolhida:</p>
+    <input type="number" id="quantidade">
 
-        </form>
+    <br><br>
 
-        <h2>Dados Empresariais</h2>
+    <button onclick="cadastrar()">Cadastrar</button>
 
-        <div id="dadosEmpresa">
+    <hr>
 
-        </div>
+    <div id="resultado"></div>
+
+
+
 </body>
-
 </html>
